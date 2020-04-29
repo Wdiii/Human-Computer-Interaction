@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
         android:layout_width="362dp"
         android:layout_height="161dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +22,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/readOne"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="15dp"
@@ -32,14 +33,35 @@
                 app:srcCompat="@drawable/pink" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/readTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sunflower" />
+
+            <ImageView
+                android:id="@+id/readThree"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/flower2" />
+
+            <ImageView
+                android:id="@+id/readFour"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="15dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/sunflower" />
+                app:srcCompat="@drawable/puppy" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -164,6 +186,7 @@
         app:srcCompat="@drawable/music" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
         android:layout_width="362dp"
         android:layout_height="161dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -199,7 +222,7 @@
                 app:srcCompat="@drawable/billie" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/musicTaylor"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
@@ -208,4 +231,34 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="182dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        android:textColor="#117BAA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/search" />
 </androidx.constraintlayout.widget.ConstraintLayout>
