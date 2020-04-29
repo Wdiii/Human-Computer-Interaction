@@ -9,7 +9,11 @@ import kotlinx.android.synthetic.main.read_day2.*
 import kotlinx.android.synthetic.main.read_day2.btnNext
 import kotlinx.android.synthetic.main.read_home.*
 import kotlinx.android.synthetic.main.activity_main.returnHome as returnHome1
+import kotlinx.android.synthetic.main.read_day2.goToHelp as goToHelp1
+import kotlinx.android.synthetic.main.read_day2.goToLike as goToLike1
 import kotlinx.android.synthetic.main.read_day2.goToMusic as goToMusic1
+import kotlinx.android.synthetic.main.read_home.goToHelp as goToHelp1
+import kotlinx.android.synthetic.main.read_home.goToLike as goToLike1
 import kotlinx.android.synthetic.main.read_home.returnHome as returnHome1
 
 class ReadDay2: AppCompatActivity() {
@@ -24,6 +28,14 @@ class ReadDay2: AppCompatActivity() {
 
         goToMusic.setOnClickListener {
             startActivity(Intent(this,MusicHome ::class.java ))
+        }
+
+        goToLike.setOnClickListener {
+            startActivity(Intent(this,LikeHome ::class.java ))
+        }
+
+        goToHelp.setOnClickListener {
+            startActivity(Intent(this,HelpHome ::class.java ))
         }
 
         btnNext.setOnClickListener {
