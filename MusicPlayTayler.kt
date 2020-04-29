@@ -51,6 +51,10 @@ class MusicPlayTayler: AppCompatActivity() {
                 }
             }
         }).start()
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this,MusicHome ::class.java ))
+        }
     }
 
     @SuppressLint("HandlerLeak")
