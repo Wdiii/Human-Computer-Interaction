@@ -27,6 +27,18 @@ class LikeHome : AppCompatActivity() {
         goToHelp.setOnClickListener {
             startActivity(Intent(this,HelpHome ::class.java ))
         }
+        
+        readOne.setOnClickListener {
+            startActivity(Intent(this,ReadHome ::class.java ))
+        }
+
+        readTwo.setOnClickListener {
+            startActivity(Intent(this,ReadDay2 ::class.java ))
+        }
+
+        musicTaylor.setOnClickListener {
+            startActivity(Intent(this,MusicPlayTayler ::class.java ))
+        }
 
     }
 }
